@@ -1,11 +1,12 @@
 import static org.junit.Assert.assertEquals;
 
+import Model.Rectangle;
 import org.junit.Test;
 
 public class RectangleTest {
 
     @Test
-    void testComputeArea(){
+    public void testComputeArea(){
         Rectangle rectangle;
         rectangle = new Rectangle(2, 3);
         assertEquals(rectangle.computeArea(), 6);
@@ -20,7 +21,7 @@ public class RectangleTest {
     }
 
     @Test
-    void testGetWidth(){
+    public void testGetWidth(){
         Rectangle rectangle;
         rectangle = new Rectangle(2, 3);
         assertEquals(rectangle.getWidth(), 2);
@@ -35,7 +36,7 @@ public class RectangleTest {
     }
 
     @Test
-    void testGetHeight(){
+    public void testGetHeight(){
         Rectangle rectangle;
         rectangle = new Rectangle(2, 3);
         assertEquals(rectangle.getHeight(), 3);
@@ -50,42 +51,42 @@ public class RectangleTest {
     }
 
     @Test
-    void testSetWidth(){
+    public void testSetWidth(){
         Rectangle rectangle;
         rectangle = new Rectangle(2, 3);
-        rectanlge.setWidth(20);
+        rectangle.setWidth(20);
         assertEquals(rectangle.getWidth(), 20);
         rectangle = new Rectangle(1, 1);
-        rectanlge.setWidth(3);
+        rectangle.setWidth(3);
         assertEquals(rectangle.getWidth(), 3);
         rectangle = new Rectangle(150, 200);
-        rectanlge.setWidth(1);
+        rectangle.setWidth(1);
         assertEquals(rectangle.getWidth(), 1);
         rectangle = new Rectangle(1, 10000);
-        rectanlge.setWidth(200);
+        rectangle.setWidth(200);
         assertEquals(rectangle.getWidth(), 200);
         rectangle = new Rectangle(7, 9);
-        rectanlge.setWidth(10000);
+        rectangle.setWidth(10000);
         assertEquals(rectangle.getWidth(), 10000);
     }
 
     @Test
-    void testSetHeight(){
+    public void testSetHeight(){
         Rectangle rectangle;
         rectangle = new Rectangle(2, 3);
-        rectanlge.setHeight(20);
+        rectangle.setHeight(20);
         assertEquals(rectangle.getHeight(), 20);
         rectangle = new Rectangle(1, 1);
-        rectanlge.setHeight(3);
+        rectangle.setHeight(3);
         assertEquals(rectangle.getHeight(), 3);
         rectangle = new Rectangle(150, 200);
-        rectanlge.setHeight(1);
+        rectangle.setHeight(1);
         assertEquals(rectangle.getHeight(), 1);
         rectangle = new Rectangle(1, 10000);
-        rectanlge.setHeight(200);
+        rectangle.setHeight(200);
         assertEquals(rectangle.getHeight(), 200);
         rectangle = new Rectangle(7, 9);
-        rectanlge.setHeight(10000);
+        rectangle.setHeight(10000);
         assertEquals(rectangle.getHeight(), 10000);
     }
 

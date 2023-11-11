@@ -1,11 +1,12 @@
 import static org.junit.Assert.assertEquals;
 
+import Model.Square;
 import org.junit.Test;
 
 public class SquareTest {
 
     @Test
-    void testComputeArea(){
+    public void testComputeArea(){
         Square square;
         square = new Square(2);
         assertEquals(square.computeArea(), 4);
@@ -21,7 +22,7 @@ public class SquareTest {
 
 
     @Test
-    void testGetSide(){
+    public void testGetSide(){
         Square square;
         square = new Square(2);
         assertEquals(square.getSide(), 2);
@@ -36,22 +37,22 @@ public class SquareTest {
     }
 
     @Test
-    void testSetSide(){
+    public void testSetSide(){
         Square square;
         square = new Square(2);
-        rectanlge.setSide(20);
+        square.setSide(20);
         assertEquals(square.getSide(), 20);
         square = new Square(1);
-        rectanlge.setSide(3);
+        square.setSide(3);
         assertEquals(square.getSide(), 3);
         square = new Square(150);
-        rectanlge.setSide(1);
+        square.setSide(1);
         assertEquals(square.getSide(), 1);
         square = new Square(1);
-        rectanlge.setSide(200);
+        square.setSide(200);
         assertEquals(square.getSide(), 200);
         square = new Square(7);
-        rectanlge.setSide(10000);
+        square.setSide(10000);
         assertEquals(square.getSide(), 10000);
     }
 
